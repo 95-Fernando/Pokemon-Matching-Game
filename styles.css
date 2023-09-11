@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+}
+
+body{
+    color: aliceblue;
+    background: #3a6186;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFCC00, #D5A100);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFCC00, #D5A100); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.title{
+    display: block;
+    padding: 18px;
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    font-size: 1rem;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 90vh;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    text-align: center;
+    background-image: radial-gradient( circle farthest-corner at 32.7% 82.7%,  #0075BE 8.3%, #0A285F 79.4% );
+}
+
+.section__display{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card{
+    width: 20%;
+    height: 20%;
+    background-color: #f1faf1;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    cursor: pointer;
+    transition:  background-color .5s;
+}
+
+
+.card__right{
+    width: 20%;
+    height: 20%;
+    background-color: rgb(241, 250, 241, 0.5);
+    border-radius: 5px;
+    border: 1px solid #000000;
+    cursor: pointer;
+    transition:  background-color .5s;
+}
+.card:hover, .winner__button:hover{
+    background-color: #FFCC00;
+}
+
+.section2{
+    width: 200px;
+}
+
+.statistics{
+    display: block;
+    margin-top: 25%; 
+     height: 30%;
+     padding: px; 
+     font-size: .75rem;
+     text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff; 
+}
+
+.winner__container,
+.loser__container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    gap: 10%;
+    width: max(60vw, 300px);
+    height: max(90vh, 450px);
+    border: 3px solid black;
+    border-radius: 15px;
+    background-image: linear-gradient( 97.3deg,  #30A7D7 10.7%, #1847D7 39.5%, #0075BE 69.7% );
+}
+
+.loser__container{
+    background-image: linear-gradient(#D31027, #EA384D);
+}
+
+.winner__text,
+.loser__text{
+    color: #ff4d00;
+    text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
+    margin: 30px;
+}
+
+.loser__text{
+    color: #fff665;
+}
+
+.statistics__winner{
+    text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #228dff,0 0 35px #228dff,0 0 40px #228dff;  
+}
+
+.winner__button{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.statistics__numbers{
+    color: #5dfca7;
+}
+
+.hide{
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    .card{
+        width: 100px;
+        height: 100px;
+    }
+
+    .section__display{
+        overflow: scroll;
+    }
+}
