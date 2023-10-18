@@ -11,11 +11,11 @@ let timeCounter = 40;
 let regressiveTime = null;
 
 //Audios
-let clickAudio = new Audio("/Pokemon Matching Game/assets/sounds/click.mp3")
-let loseAudio = new Audio("/Pokemon Matching Game/assets/sounds/lose.mp3")
-let rightAudio = new Audio("/Pokemon Matching Game/assets/sounds/right.wav")
-let winAudio = new Audio("/Pokemon Matching Game/assets/sounds/win.mp3")
-let wrongAudio = new Audio("/Pokemon Matching Game/assets/sounds/wrong.wav")
+let clickAudio = new Audio("assets/sounds/click.mp3")
+let loseAudio = new Audio("/assets/sounds/lose.mp3")
+let rightAudio = new Audio("/assets/sounds/right.wav")
+let winAudio = new Audio("/assets/sounds/win.mp3")
+let wrongAudio = new Audio("/assets/sounds/wrong.wav")
 
 //HTML connections
 let showMovements = document.getElementById("movements");
@@ -76,14 +76,14 @@ const flip = (id) => {
     if(flippedCards == 1){ // Ejecución cuando el contador es 1
         clickAudio.play();
         cardOne = document.getElementById(id);
-        firstResult = `<img src="/Pokemon Matching Game/assets/images/${numbers[id]}.png" alt="">`;
+        firstResult = `<img src="/assets/images/${numbers[id]}.png" alt="">`;
         cardOne.innerHTML = firstResult;
     
         //Deshabilitar el boton uno
        cardOne.setAttribute("disabled","true")
     } else if (flippedCards == 2){ // Ejecución cuando el contador es 2
         cardTwo = document.getElementById(id);
-        secondResult = `<img src="/Pokemon Matching Game/assets/images/${numbers[id]}.png" alt="">`;
+        secondResult = `<img src="/assets/images/${numbers[id]}.png" alt="">`;
         cardTwo.innerHTML = secondResult;
         
         //Deshabilitar segundo botón
