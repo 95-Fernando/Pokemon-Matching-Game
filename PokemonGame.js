@@ -110,7 +110,7 @@ const flip = (id) => {
                 cardTwo.innerHTML = ""
                 cardOne.removeAttribute("disabled")
                 cardTwo.removeAttribute("disabled")
-            }, 500 ) ;
+            }, 1200 ) ;
         }
     }
     if(hitsCounter == 8){ //Preguntar si el usuario hizo 8 aciertos
